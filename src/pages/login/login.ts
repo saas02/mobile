@@ -38,7 +38,8 @@ export class LoginPage {
   saveData(){      
     if(this.myForm.value.email == 'saas02@gmail.com' && this.myForm.value.password == '970015'){      
       this.showAlert('Bienvenido......');
-      this.navCtrl.push(HomePage);
+      //this.navCtrl.push(HomePage);
+      this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'forward'});
     }else{
       this.showAlert('El Usuario o contraseña son incorrectos');
     }
