@@ -21,7 +21,8 @@ export class CerrarPage {
 
   ionViewDidLoad() {
     this.showAlert('Cerrando Sesión');
-    this.navCtrl.push(LoginPage);    
+    //this.navCtrl.push(LoginPage);  
+    this.navCtrl.setRoot(LoginPage, {}, {animate: true, direction: 'forward'});  
   }  
 
   showAlert(tittle) {
