@@ -20,10 +20,12 @@ export class LoginPage {
   myForm: FormGroup;
   
   constructor(
+
     public navCtrl: NavController,
     public fb: FormBuilder,
     public navParams: NavParams,
     public alertCtrl: AlertController
+    
   ) {
     this.myForm = this.fb.group({
       //name: ['', [Validators.required]],
